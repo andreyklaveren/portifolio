@@ -1,0 +1,47 @@
+:root {
+    --primary: #c778dd;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    background-color: #282C33;
+    font-family: 'Fira code';
+    color: white;
+}
+nav{
+    margin: 32px 171px 62px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    list-style: none;
+}
+.logoMarca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+a {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+span {
+    color: var(--primary, #C778DD);
+    font-size: 16px;
+    font-weight: 500;
+}
