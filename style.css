@@ -1,103 +1,124 @@
 :root {
-    --primary: #c778dd;
-    --gray: #ABB2BF;
+  --primary: #c778dd;
+  --gray: #abb2bf;
+  --white: #fff;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 body {
-    background-color: #282C33;
-    font-family: 'Fira code';
-    color: white;
-    margin-inline: 350px;
+  background-color: #282c33;
+  font-family: 'Fira code';
+  color: var(--white);
+  margin-inline: 350px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 /* Estilos navegação */
-nav{
-    margin: 32px 0px 62px;
-    display: flex;
-    justify-content: space-between;
+nav {
+  margin: 32px 0px 62px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logoMarca {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-/* Estilos links navegação */
-.links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-    list-style: none;
+/* Estilos header links */
+.headerlinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  list-style: none;
 }
 
-.links a {
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--gray);
+.headerlinks a {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--gray);
 }
 
-.links a:hover {
-    transition-duration: 400ms;
-    color: white;
+.headerlinks a:hover {
+  transition-duration: 400ms;
+  font-weight: 400;
+  color: white;
 }
 
+.headerlinks a:active {
+  font-weight: 500;
+}
 
 span {
-    color: var(--primary);
-    font-weight: 700;
+  color: var(--primary);
+  font-weight: 700;
 }
 
 main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
 }
-
+.logoMain {
+  width: 155px;
+  height: 155px;
+  z-index: -1;
+  position: fixed;
+  margin-left: 700px;
+}
 .fotoPerfil {
-    text-align: center;
+  text-align: center;
 }
 
 .quadradoRoxoMain {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 8px 80px 8px 62px;
-    border: 1px solid var(--gray);
-    margin-top: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 80px 8px 62px;
+  border: 1px solid var(--gray);
+  margin-top: -5px;
 }
 
-.resumoSobre h2{
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 32px;
-    width: 560px;
+.resumoSobre h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 32px;
+  width: 560px;
 }
 
-.resumoSobre p{
-    width: 463px;
-    color: var(--gray);
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 24px;
+.resumoSobre p {
+  width: 463px;
+  color: var(--gray);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 24px;
 }
 
-.resumoSobre button{
-    background-color: transparent;
-    padding: 8px 16px;
-    border: 1px solid var(--primary);
-    color: var(--white);
-    font-size: 16px;
-    font-weight: 500;
-    font-family: 'fira code';
+button {
+  background-color: transparent;
+  padding: 8px 16px;
+  border: 1px solid var(--primary);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'fira code';
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(199, 120, 221, 0.2);
 }
