@@ -1,7 +1,7 @@
 :root {
     --primary: #c778dd;
+    --gray: #ABB2BF;
 }
-
 
 * {
     margin: 0;
@@ -13,20 +13,16 @@ body {
     background-color: #282C33;
     font-family: 'Fira code';
     color: white;
+    margin-inline: 350px;
 }
+
+/* Estilos navegação */
 nav{
-    margin: 32px 171px 62px;
+    margin: 32px 0px 62px;
     display: flex;
     justify-content: space-between;
 }
 
-ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-    list-style: none;
-}
 .logoMarca {
     display: flex;
     align-items: center;
@@ -34,21 +30,36 @@ ul {
     gap: 10px;
 }
 
-a {
+/* Estilos links navegação */
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    list-style: none;
+}
+
+.links a {
     font-size: 16px;
     font-weight: 500;
+    color: var(--gray);
+}
+
+.links a:hover {
+    transition-duration: 400ms;
     color: white;
 }
 
+
 span {
-    color: var(--primary, #C778DD);
+    color: var(--primary);
     font-weight: 700;
 }
 
 main {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 30px;
 }
 
@@ -56,9 +67,37 @@ main {
     text-align: center;
 }
 
-.quadrado {
+.quadradoRoxoMain {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    padding: 8px 80px 8px 62px;
+    border: 1px solid var(--gray);
+    margin-top: -5px;
+}
+
+.resumoSobre h2{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    width: 560px;
+}
+
+.resumoSobre p{
+    width: 463px;
+    color: var(--gray);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.resumoSobre button{
+    background-color: transparent;
+    padding: 8px 16px;
+    border: 1px solid var(--primary);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'fira code';
 }
