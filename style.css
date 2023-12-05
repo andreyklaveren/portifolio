@@ -16,6 +16,12 @@ body {
     margin-inline: 350px;
 }
 
+@media screen and (min-width:1025px) {
+    body {
+        font-size:2px;
+    }
+}
+
 /* Estilos navegação */
 nav{
     margin: 32px 0px 62px;
